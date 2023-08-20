@@ -1,0 +1,63 @@
+package challenge;
+
+import  java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		// Create a class of  your  choice then create an object from that class using user input.
+		
+		main main = new main();
+        	
+		
+        
+        userIO input = main.userInput();
+        
+        main.printOut(input);
+	}
+
+	
+	private userIO userInput() {
+		
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter First Name:  ");
+		String firstname = s.nextLine();
+		
+		System.out.print("Enter Last Name: ");
+		String lastname = s.nextLine();
+		
+		System.out.print("Enter age: ");
+		int Age = s.nextInt();
+		
+		System.out.print("Enter sex: ");
+		char sx = s.next().charAt(0);
+		
+		s.nextLine();
+		
+		System.out.print("Enter Phone Number: ");
+		String num = s.nextLine();
+		
+		
+		
+		
+        userIO input = new userIO(firstname, lastname, Age, sx, num);
+
+       s.close();
+       
+       return input;
+	}
+	
+	private void printOut(userIO input) {
+		
+		
+		 System.out.println("\nFirst Name: " + input.firstName);
+		 System.out.println("Last Name: " + input.lastName);
+		 System.out.println("Age: " + input.age);
+		 System.out.println("Sex: " + input.sex);
+		 System.out.println("Phone Number: " + input.phoneNumber);
+	}
+
+}
+
+
