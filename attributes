@@ -1,0 +1,21 @@
+package challenge;
+
+public class userIO {
+	
+	String firstName;
+	String lastName;
+	int age;
+	char sex;
+	String phoneNumber;
+	
+	
+	public userIO(String fName, String lName, int numAge, char s, String phoneNum){
+		
+		this.firstName = fName;
+		this.lastName = lName;
+		this.age = numAge;
+		this.sex = s;
+		this.phoneNumber = phoneNum;
+	}
+
+}
