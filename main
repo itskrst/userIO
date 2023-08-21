@@ -7,13 +7,13 @@ public class main {
 	public static void main(String[] args) {
 		// Create a class of  your  choice then create an object from that class using user input.
 		
-		main main = new main();
+		main m = new main();
         	
 		
         
-        userIO input = main.userInput();
+        userIO input = m.userInput();
         
-        main.printOut(input);
+        m.printOut(input);
 	}
 
 	
